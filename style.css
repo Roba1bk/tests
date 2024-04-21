@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+:root {
+  --nav-bar: #6b2026;
+  --bg-color: #967575d0;
+  --text-color: #18181a;
+  --main-color: #593ef5;
+  --bg-color01: #acf108;
+  --bg-color02: #f1106ed3;
+  --bg-color03: #30d6f3;
+  --bg-color04: #f30c0c;
+}
+html {
+  font-size: 50%;
+}
+body {
+  background: var(--bg-color);
+}
+
+/*==== header ====*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--nav-bar);
+  
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 15rem;
+  transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+/*==== heading content ====*/
+.contents{
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  clear: left;
+}
+.contents h3{
+  font-size: 6rem;
+  font-weight: 700;
+}
+.contents p{
+  font-size: 3rem;
+}
+
+
+/*===extra small screen ===*/
+@media screen and (max-width: 600px){
+  body{
+    background: var(--bg-color01);
+  }
+}
+
+/*===small screen ===*/
+@media screen and (min-width: 600px) and (max-width: 768px){
+  body{
+    background: var(--bg-color02);
+  } 
+}
+
+/*=== medium screen ===*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+  body{
+    background: var(--bg-color03);
+  }
+}
+
+/*===large screen ===*/
+@media screen and (max-width: 992px) and (max-width: 1200px){
+  body{
+    background: var(--bg-color04);
+  }
+}
+
+/*===extra small screen ===*/
+@media screen and (min-width: 1200px){
+  body{
+    background: var(--bg-color);
+  }
+}
